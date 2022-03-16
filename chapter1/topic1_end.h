@@ -9,6 +9,7 @@
  * 递归
  * @param x
  * @return
+ * O(2^n)
  */
 int f1(int x) {
     return (x <= 1) ? 1 : f1(x - 1) + f1(x - 2);
@@ -18,6 +19,7 @@ int f1(int x) {
  * 动态规划
  * @param x
  * @return
+ * O(n)
  */
 int f2(int x) {
     if (x < 2) {
@@ -36,6 +38,8 @@ int f2(int x) {
  * 带记录表的递归
  * @param x
  * @return
+ * O(n)
+ * s(n)
  */
 int *array;
 
